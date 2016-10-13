@@ -1,0 +1,298 @@
+*{margin: 0;padding: 0;font-family: "Microsoft YaHei";text-decoration:none;list-style: none;}  /*取消下划线*/
+
+/*************************************header***************************************/
+
+header{
+	background: #000;
+	height: 105px;
+	width: 100%;
+	min-width: 1200px;
+	color: white;
+	position: relative;
+}
+.top{
+	background: green;
+	width: 960px;
+	margin:0 auto;
+}
+.logo{
+	padding:20px 0 20px 16px;
+	width: 100px;
+	float: left;
+}
+.userInfo{                         /*id，class名区分大小写*/
+	font-size: 12px;
+	margin:10px 17px 0 0;
+	float: right;
+}
+.sonyGroup{margin-right: 9px;}
+.globalHome{margin-right: 28px;}
+.userInfo p{
+	display:inline;                /*将块元素改变成行内元素*/
+	color: white;
+	}       
+.topNav{
+	position: absolute;
+	bottom: 0;
+}
+.topNav li{
+	display: inline-block;        /*列表横向*/
+	color: white;
+	font-size: 14px;
+	margin:0 18px 0 18px;
+	padding:15px 0 15px 0;
+}
+.topNav a{
+	color: white;
+}
+/*************************************mainbody***************************************/
+.mainbody{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*************************************kv***************************************/
+
+.keyVision{
+	text-align: center;
+	height: 520px;
+}
+.kvgif{
+	position:relative;
+	bottom: 320px;
+}
+
+/*************************************NewRecommend***************************************/
+
+.NewRecommend{position: relative;}
+.NewRecommendTitle{
+	padding-top: 42px;
+	padding-bottom: 22px;
+	margin-left: 15px;
+}
+.NewRecommendTitle h2{
+	color: #787878;
+	line-height: 18px;
+	font-size: 1.5em;
+	font-weight: bold;
+	width: 960px;
+	margin:0 auto;
+}
+.NewRecommendList{
+	height: 274px;
+	width: 960px;
+	margin:0 auto;
+    overflow: hidden;      /*溢出隐藏*/
+	position: relative;
+}
+.list{
+	position: absolute;
+	width: 4800px;			/*容器宽度*/
+}
+.list li{
+	float: left;
+	margin-right: 4px;
+	margin-left: 4px;
+	line-height:0;           /*避免img下方空隙出现*/
+	z-index: 2;
+}
+.Detail{
+	background-color: #eff0f1;
+	font-size: 14px;
+	height: 100px;
+	color: #595959;
+	padding: 14px 40px 15px 15px;
+    line-height: 20px;
+}
+.arrow{
+	width: 1100px;
+	height: 0;
+	margin: 0 auto;
+	position: relative;
+	bottom: 210px;
+	cursor: pointer;
+	z-index: 1
+}
+.prev{padding-right: 990px;}
+.buttons{
+	position: absolute;
+	right: 160px;
+	top: 45px;
+}
+.buttons .on{
+	background: #33b1fb;
+	border-color: white;
+}
+.buttons span{
+	height: 15px;
+	width: 15px;
+	border: white 4px solid;
+	border-radius: 50%;
+	margin-left:5px;
+	background: #d0d1d3;
+	float: left;
+	cursor: pointer;
+}
+.buttons span:hover{
+	border-color: #c9ecff;
+}
+
+
+/*************************************news***************************************/
+
+.news{
+	margin:0 auto;
+	margin-top: 55px;
+	width: 960px;
+	padding: 40px 120px 12px 120px;
+	background-color:#eff0f1;
+	overflow: hidden;       /*解决子容器全部浮动时父容器高度不能自动撑开的问题*/
+}
+.newsUnit{
+	float: left;
+	width: 33.33%;
+	background-color: #eff0f1;
+	display:inline-block;
+}
+.newUnit h2{
+	margin-bottom: 24px;
+}
+.news li{
+	margin-left: 4px;
+	margin-bottom: 8px;
+	position: relative;
+}
+.news p{
+	font-size: 12px;
+	color: #595959;
+	line-height: 18px;
+	position: absolute;
+	left: 130px;
+	top:22px;
+	padding-right: 27px;
+}
+.date{
+	padding: 0 5px;
+	color: #f0f1f2;
+	background: #d0d1d3;
+	font-size: 9px;
+	position: absolute;
+	left: 130px;
+}
+.newscenter{
+	font-size: 12px;
+	line-height: 40px;
+	padding-left: 15px;
+	color: #595959;
+	height: 40px;
+}
+
+/*************************************company&website***************************************/
+
+.website{
+	height: 149px;
+	float: left;
+}
+.company{
+	height: 149px;
+	float: left;
+	margin-left: 130px;
+}
+.linkContainer li{
+	float: left;
+	width: 152px;
+	height: 114px;
+	overflow: hidden;
+	margin-left: 8px;
+}
+.linkContainer a{
+	position: relative;
+	top: 0;
+}
+.linkContainer h2{
+	background-repeat: no-repeat;
+	height: 16px;
+	margin: 30px 0 19px 15px;
+}
+.company h2{
+	background-image: url(../img/company_link.gif);
+}
+.website h2{
+	background-image: url(../img/website_link.gif);
+}
+
+/*************************************footer***************************************/
+
+footer{
+	width: 100%;
+	min-width: 1200px;
+	background-color: #1f2024;
+	margin-top: 210px;
+}
+#footerContainer1{
+	width: 960px;
+	padding-left: 40px;
+	margin: 0 auto;
+}
+#firstList{
+	width: 320px;
+}
+.linkList{
+	float: left;
+	width: 160px;
+}
+footer a{
+	font-size: 12px;
+	line-height: 24px;
+	color: white;
+}
+footer h4{
+	margin: 35px 0 14px;
+}
+.serviceContainer{
+	display: inline-block;
+	width: 77px;
+	height: 18px;
+	overflow: hidden;
+	margin: 15px 0 60px;
+}
+#onlineService{
+	position: relative;
+	top: 0;
+}
+.followUs{
+	display: inline-block;
+	font-size: 12px;
+	color: white;
+	background-color: #424243;
+	line-height: 40px;
+	text-align: center;
+	width: 142px;
+	height: 40px;
+	margin-bottom: 4px;
+}
+#footerContainer2{
+	width: 960px;
+	margin: 0 auto;
+	border-top: 1px #333438 solid;
+	clear: both;
+}
+.container2Left{
+	padding: 13px 8px;
+}
+#footerContainer2 span, #footerContainer2 a{
+	color: #3e3f43;
+	font-size: 12px;
+	margin:0 12px;
+}
+#footLinkContainer{
+	padding-top: 10px;
+}
+#footLinkContainer img{
+	position: relative;
+		top: -14px;
+}
+.footLink{
+	height: 14px;
+	display: inline-block;
+	overflow: hidden;
+}
